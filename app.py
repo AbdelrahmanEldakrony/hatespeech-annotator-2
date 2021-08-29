@@ -101,7 +101,8 @@ if selected_option == option2:
     if(len(results) == 0):
         st.markdown("<h3 style='text-align: center;'>Congratulations, you have nothing to label!​​​​​​​​​​​​​​​​​​​​​ &#x1F60a;</h3>", unsafe_allow_html=True)
 
-
+    results.sort()
+    
     index= st.number_input(label = 'Index', value = 0 ,min_value = 0, max_value = 146, step = 1)
 
 
