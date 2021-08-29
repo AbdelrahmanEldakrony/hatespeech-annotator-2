@@ -152,6 +152,10 @@ if selected_option == option2:
         # Image-text relation
         image_text_relation = st.radio('Image-text relation', ['None', 'Supporing', 'Need'], key="{}.9".format(img_id))
 
+        st.caption('None : The text and the image are not related at all, both stand completely on their own.')
+        st.caption('Supporting : The image text is supporting the text, but adds no or barely any further content. Imagine the text to be on a blank background – would there be a big/any difference? Or are there other possible interpretations of text that the image (at least partly) excludes?')
+        st.caption('Need : The interpretation of the text depends on that specific image – another or no image would allow for different interpretations.')
+
         # Translation
         #translation = st.text_area('Translation', key="{}.10".format(img_id))
 
